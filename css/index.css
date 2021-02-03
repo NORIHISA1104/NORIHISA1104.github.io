@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+/*------------------------------------------------------------
+	デフォルトスタイル
+------------------------------------------------------------*/
+html, body, div, span, figure, img, fieldset,
+a, h1, h2, h3, h4, h5, h6, p, blockquote,
+pre, small, strong, dl, dt, dd, ol, ul, li,
+table, caption, tbody, tfoot, thead, tr, th, td{
+	margin:0;
+	padding:0;
+	border:none;
+	outline:none;
+	font-size:1em;
+}
+
+html{
+    font:14px/1.3 "メイリオ", Meiryo, Osaka, "ヒラギノ角ゴ Pro W3", "ＭＳ ゴシック", Arial, Helvetica, Tahoma, sans-serif;
+}
+
+
+
+/*------------------------------------------------------------
+	レイアウト
+------------------------------------------------------------*/
+body{
+	background:#FFF;
+	width:100%;
+	color:#252525;
+}
+
+
+/*------------------------------------------------------------
+	ヘッダー
+------------------------------------------------------------*/
+header{
+	width:100%;
+	overflow:hidden;
+}
+
+.top{
+	display: table;
+	width: 100%;
+	background:url(img/header_bg.gif) repeat-x;
+	background-image:-moz-linear-gradient(top, #0093B5, #00769E);
+	background-image:-webkit-gradient(linear, center top, center bottom, from(#0093B5), to(#00769E));
+	background-image:-o-linear-gradient(top, #0093B5, #00769E);
+	background-image:linear-gradient(top, #0093B5, #00769E);
+	border-bottom:solid 1px #00355F;
+	color:#FFF;
+	text-shadow:1px 1px 1px #004673;
+
+}
+
+.logo {
+	width: 30%;
+	display: table-cell;
+	text-align: left;
+	padding: 3%;
+	vertical-align: middle;
+}
+.screen_name{
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle;
+}
+.login_info{
+	width: 30%;
+	display: table-cell; 
+	text-align: right; 
+	padding: 3%;
+	vertical-align: middle;
+}
+
+/*------------------------------------------------------------
+	重要
+------------------------------------------------------------*/
+.important {
+	width: 100%;
+	text-align: center;
+	margin-top: 3%;
+	margin-bottom: 3%;
+}
+
+.important_contents {
+	width: 90%;
+	border: 2px solid red;
+	display: inline-block;
+	text-align: left;
+	padding: 1%;
+	color: red;
+	text-decoration: underline;
+}
+
+/*------------------------------------------------------------
+	メニュー
+------------------------------------------------------------*/
+.menu {
+	display: table;
+	width: 100%;
+	background-image: -webkit-gradient(linear, center top, center bottom, from(#DFDFDF), to(#C1C1C1));
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	border-color: #FFF transparent #929292;
+	height: 60px;
+	cursor: pointer;
+}
+
+.menu_contents_left {
+	width: 10%;
+	display: table-cell;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.menu_contents_center {
+	width: 80%; 
+	display: table-cell; 
+	text-align: center; 
+	padding-top: 3%; 
+	padding-bottom: 3%;
+	vertical-align: middle;
+}
+
+.menu_contents_right {
+	width: 10%; 
+	display: table-cell; 
+	text-align: right;
+	background: url(img/link_icon.png) no-repeat  center;
+	vertical-align: middle;
+}
+
+.information {
+	margin-top: 2%;
+}
+
+.information_content {
+	padding-left: 2%;
+	padding-right: 2%;
+}
+
+.information_slash {
+	width: 97%; 
+	border-top: 1px dashed #bbb;
+}
