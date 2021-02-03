@@ -1,43 +1,5 @@
 @charset "UTF-8";
 
-/*------------------------------------------------------------
-	デフォルトスタイル
-------------------------------------------------------------*/
-html, body, div, span, figure, img, fieldset,
-a, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, small, strong, dl, dt, dd, ol, ul, li,
-table, caption, tbody, tfoot, thead, tr, th, td{
-	margin:0;
-	padding:0;
-	border:none;
-	outline:none;
-	font-size:1em;
-}
-
-html{
-    font:14px/1.3 "メイリオ", Meiryo, Osaka, "ヒラギノ角ゴ Pro W3", "ＭＳ ゴシック", Arial, Helvetica, Tahoma, sans-serif;
-}
-
-
-
-/*------------------------------------------------------------
-	レイアウト
-------------------------------------------------------------*/
-body{
-	background:#FFF;
-	width:100%;
-	color:#252525;
-}
-
-
-/*------------------------------------------------------------
-	ヘッダー
-------------------------------------------------------------*/
-header{
-	width:100%;
-	overflow:hidden;
-}
-
 .top{
 	display: table;
 	width: 100%;
