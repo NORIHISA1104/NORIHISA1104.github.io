@@ -88,7 +88,7 @@
 	width: 10%; 
 	display: table-cell; 
 	text-align: right;
-	background: url(img/link_icon.png) no-repeat  center;
+	background: url(../img/link_icon.png) no-repeat  center;
 	vertical-align: middle;
 }
 

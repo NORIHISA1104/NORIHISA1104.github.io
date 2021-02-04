@@ -33,20 +33,27 @@
 		<div class="login_info">予約　太郎</div>
 	</div>
 	<div class="screen">
-		<div class="back">＜戻る</div>
+		<div class="back" onclick="history.back();">＜戻る</div>
 		<div class="screen_name">スペース一覧</div>
 		<div class="login_info"></div>
 	</div>
 </header>
 <!-- ▲ヘッダー▲ -->
 
-
+<!-- 予約ステップ -->
+<ol class="stepBar">
+<li class="visited"><span>1</span><br>スペース・日時選択</li>
+<li><span>2</span><br>ご予約者様情報入力</li>
+<li><span>3</span><br>ご予約内容確認</li>
+<li><span>4</span><br>ご予約完了</li>
+</ol>
+<!-- 予約ステップ -->
 
 <!-- スペース一覧 -->
-<div class="" style="margin: 1%; font-size: 10pt;">
-	ご予約を希望されるスペースを選択し、次画面にて日時を決定して下さい。
-</div>
 <div class="space_unit">
+	<div class="space_link">
+		<img src="./img/link_icon.png" />
+	</div>
 	<div class="space_contents1">
 		<div class="space_name">
 			スペース名あああああああ
@@ -74,6 +81,9 @@
 	</div>
 </div>
 <div class="space_unit">
+	<div class="space_link">
+		<img src="./img/link_icon.png" />
+	</div>
 	<div class="space_contents1">
 		<div class="space_name">
 			スペース名あああああああ
