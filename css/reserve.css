@@ -1,13 +1,14 @@
 @charset "UTF-8";
 
 .space_unit{
-	position: relative;
+	--position: relative;
 	box-shadow: 2px 2px 2px 2px gray;
 	width: 99%;
 	margin-bottom: 3%;
 	display: table;
 	background: linear-gradient(-45deg, rgba(247, 250, 255, .8), rgba(205, 223, 255, .8));
 	background-size: cover;
+	--z-index: -1;
 }
 
 .space_link {
