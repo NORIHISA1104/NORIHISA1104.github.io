@@ -34,8 +34,8 @@ console.log(document.documentElement.scrollTop);
 //	L.scrollTop = T.offsetTop + T.rows[20].cells[0].offsetTop;
 }
 
-function goDateSelect(){
-	location.href = "dateSelect.html";
+function goInputReserve(){
+	location.href = "inputReserve.html";
 }
 
 
@@ -44,7 +44,7 @@ $(function() {
 		$("#overlay, #overlayWindow").fadeIn();
 	});
 	
-	$('#button2').on('click', function() {
+	$('#close').on('click', function() {
 		$("#overlay, #overlayWindow").fadeOut();
 	});
 });

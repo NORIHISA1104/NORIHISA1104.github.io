@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+.itemHeader {
+	width: 37%;
+	text-align: left;
+	display: table-cell;
+	padding-left: 3%;
+}
+
+.itemBody {
+	width: 63%;
+	text-align: left;
+	display: table-cell;
+	padding-right: 3%;
+}
+
+.contentHeader {
+	display: table;
+	width: 100%;
+	background-image:-moz-linear-gradient(top, #cfd9df, #e2ebf0);
+	background-image:-webkit-gradient(linear, center top, center bottom, from(#cfd9df), to(#e2ebf0));
+	background-image:-o-linear-gradient(top, #cfd9df, #e2ebf0);
+	background-image:linear-gradient(top, #cfd9df, #e2ebf0);
+	color:#000;
+	text-shadow:1px 1px 1px #e2ebf0;
+--	padding: 3%;
+}
+
+.item {
+	width: 100%;
+	display: table;
+	padding-top: 3%;
+}
+
+.inputText{
+	width: 90%;
+}
+
+.inputTel{
+	width: 40%;
+}
+
+.inputMail{
+	width: 90%;
+}
+
+.inputDate{
+	width: 40%;
+}
+
+.inputTime{
+	width: 20%;
+}
+
+.required{
+	font-weight: bold;
+	color: red;
+}

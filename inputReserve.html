@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+
+<title>空きスペース予約　予約内容入力</title>
+
+<link rel="stylesheet" type="text/css" href="./css/common.css" media="screen">
+<link rel="stylesheet" type="text/css" href="./css/inputReserve.css" media="screen">
+<script src="./js/inputReserve.js"></script>
+<!--
+▼ファビコン設置▼
+※ファビコンを使用する際は
+コメントアウトを消してください。
+-->
+
+<!--
+<link rel="shortcut icon" href="icon URL.ico"> 
+-->
+
+<!--▲ファビコン設置▲-->
+
+</head>
+<body>
+
+
+<!-- ▼ヘッダー▼ -->
+<header>
+	<div class="top">
+		<div class="logo">ロゴ</div>
+		<div class="screen_name"></div>
+		<div class="login_info">予約　太郎</div>
+	</div>
+	<div class="screen">
+		<div class="back" onclick="history.back();">＜戻る</div>
+		<div class="screen_name">予約内容入力</div>
+		<div class="login_info"></div>
+	</div>
+	<!-- 予約ステップ -->
+	<div class="stepArea">
+		<ol class="stepBar">
+			<li class="visited"><span>1</span><br>スペース・日時<br/>選択</li>
+			<li class="visited"><span>2</span><br>ご予約者様情報<br/>入力</li>
+			<li><span>3</span><br>ご予約内容<br/>確認</li>
+			<li><span>4</span><br>ご予約<br/>完了</li>
+		</ol>
+	</div>
+	<!-- 予約ステップ -->
+</header>
+<!-- ▲ヘッダー▲ -->
+
+<!-- ご予約者様情報 -->
+<div class="contentHeader">
+	<div class="margin3">ご予約者様情報</div>
+</div>
+<div class="item">
+	<div class="itemHeader">ご予約者様<span class="required">*</span></div>
+	<div class="itemBody"><input class="inputText" type="text" value="ログインユーザー名" /></div>
+</div>
+<div class="item">
+	<div class="itemHeader">連絡可能電話番号<span class="required">*</span></div>
+	<div class="itemBody"><input class="inputTel" type="text" value="09012345678" /></div>
+</div>
+<div class="item">
+	<div class="itemHeader">メールアドレス<span class="required">*</span></div>
+	<div class="itemBody"><input class="inputMail" type="text" value="aaaaaaaaaa@aaaaaaaa.aa.aa" /></div>
+</div>
+<!-- ご予約者様情報 -->
+
+<!-- ご予約日時 -->
+<div class="contentHeader marginTop5">
+	<div class="margin3">ご利用日時</div>
+</div>
+<div class="item">
+	<div class="itemHeader">ご利用日<span class="required">*</span></div>
+	<div class="itemBody"><input class="inputDate" type="text" value="2021/02/01" /></div>
+</div>
+<div class="item">
+	<div class="itemHeader">ご利用時間<span class="required">*</span></div>
+	<div class="itemBody"><input class="inputTime" type="text" value="09:00" />～<input class="inputTime" type="text" value="10:00" /></div>
+</div>
+<!-- ご予約日時 -->
+
+<!-- 確認ボタン -->
+<div style="width: 100%; margin-top: 5%; text-align: center;">
+<a href="" class="btn btn--orange btn--radius">ご予約内容確認</a>
+</div>
+<!-- 確認ボタン -->
+
+
+<!-- ▼フッター▼ -->
+<footer>
+
+
+
+</footer>
+<!-- ▲フッター▲ -->
+
+
+</body>
+</html>

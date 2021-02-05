@@ -9,6 +9,63 @@ table th, table td {
 	padding: 3%;
 }
 
+/*------------------------------------------------------------
+	“ú•t‘I‘ð
+------------------------------------------------------------*/
+.dateSelectHeaderArea{
+	width: 100%;
+	text-align: center;
+	padding-top: 2%;
+	background-color: #FFF;
+}
+
+.dateSelectHeader{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.timeHeader{
+	width: 20%;
+}
+
+.dayHeader{
+	width: 100%;
+	display: table;
+}
+
+.lastWeek{
+	font-weight: lighter;
+	display: teble-cell;
+	text-align: left;
+	color: blue;
+	text-decoration: underline;
+}
+
+.yearMonth{
+	display: table-cell;
+	text-align: center;
+}
+
+.nextWeek{
+	font-weight: lighter;
+	display: table-cell;
+	text-align: right;
+	color: blue;
+	text-decoration: underline;
+}
+
+.dateSelectBodyArea{
+	width: 100%;
+	text-align: center;
+}
+
+.dateSelectBody{
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 #overlay {
 	width: 100%;
 	height: 100%;
@@ -21,12 +78,43 @@ table th, table td {
 }
 
 #overlayWindow {
-	width: 30%;
-	height: 30%;
-	margin: 100px auto;
-	border: 2px solid #0000FF;
-	background-color: #9999FF;
+	width: 50%;
+	height: 25%;
+	margin: 50% auto;
+	border: 2px solid #BFBFBF;
+	background-color: #FFF;
 	text-align: center;
 	display: none;
 	z-index: 999;
+}
+
+.selectTimeArea{
+	width: 100%;
+	text-align: left;
+}
+
+.closeButton{
+	width: 95%;
+	text-align: right;
+	margin: 1%;
+	font-size: 14pt;
+	font-weight: bold;
+}
+
+.selectedDate{
+	width: 100%;
+	padding-left: 5%;
+	padding-top: 5%;
+	text-align: left;
+}
+
+.selectTime{
+	padding-top: 5%;
+	padding-left: 5%;
+}
+
+.gotoInputScreen{
+	width: 100%;
+	padding-top: 10%;
+	text-align: center;
 }
