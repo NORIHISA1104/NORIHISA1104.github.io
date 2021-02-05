@@ -37,3 +37,14 @@ console.log(document.documentElement.scrollTop);
 function goDateSelect(){
 	location.href = "dateSelect.html";
 }
+
+
+$(function() {
+	$('#dateSelectTable').on('click', function() {
+		$("#overlay, #overlayWindow").fadeIn();
+	});
+	
+	$('#button2').on('click', function() {
+		$("#overlay, #overlayWindow").fadeOut();
+	});
+});
