@@ -213,13 +213,13 @@ button.btn {
 /*------------------------------------------------------------
 	角丸ボタンCSS
 ------------------------------------------------------------*/
-.btn--orange,
-a.btn--orange {
+.btn--default,
+a.btn--default {
   color: #fff;
   background: rgb(32 56 100);
 }
-.btn--orange:hover,
-a.btn--orange:hover {
+.btn--default:hover,
+a.btn--default:hover {
   color: #fff;
   background: #f56500;
 }

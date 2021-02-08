@@ -183,10 +183,32 @@
 <div id="overlay">
 	<div id="overlayWindow">
 		<div class="selectTimeArea">
-			<div id="close" class="closeButton">×</div>
-			<div class="selectedDate">
-				2021年2月6日　13:00
+		
+			<div class="screen">
+				<div class="back"></div>
+				<div class="screen_name">ご利用時間</div>
+				<div id="close" class="login_info">×</div>
 			</div>
+
+			<div class="selectedDate">
+				ご予約日時：2021年2月6日　13:00
+			</div>
+			
+
+<div class="cp_ipselect">
+<select class="cp_sl06" required>
+<option value="" hidden disabled selected></option>
+<option value="1">1時間</option>
+<option value="2">2時間</option>
+<option value="3">3時間</option>
+<option value="4">4時間</option>
+<option value="5">5時間</option>
+</select>
+<span class="cp_sl06_highlight"></span>
+<span class="cp_sl06_selectbar"></span>
+<label class="cp_sl06_selectlabel">ご利用時間</label>
+</div>
+<!--
 			<div class="selectTime">
 				ご利用時間：
 				<select id="language" name="language">
@@ -197,7 +219,13 @@
 				<option value="5">5時間</option>
 				</select>
 			</div>
+-->
+			<div class="gotoInputScreen">
+				<a class="btn btn--default btn--radius"  onclick="goInputReserve();">ご予約者様情報入力へ</a>
+			</div>
+<!--
 			<div class="gotoInputScreen"><button onclick="goInputReserve();">ご予約者様情報入力へ</button></div>
+-->
 		</div>
 	</div>
 </div>
