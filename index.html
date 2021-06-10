@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
 
-<title>空きスペース予約　メニュー</title>
+<title>契約者様・居住者様情報変更申請</title>
 
 <link rel="stylesheet" type="text/css" href="./css/common.css" media="screen">
 <link rel="stylesheet" type="text/css" href="./css/index.css" media="screen">
@@ -28,14 +28,12 @@
 <!-- ▼ヘッダー▼ -->
 <header>
 	<div class="top">
-		<div class="logo">ロゴ</div>
-		<div class=""></div>
-		<div class="login_info">予約　太郎</div>
+		<div class="logo"></div>
+		<div class="title">契約者様・居住者様情報変更申請</div>
+		<div class="login_info"></div>
 	</div>
 	<div class="screen">
-		<div class="back"></div>
-		<div class="screen_name">メニュー</div>
-		<div class="login_info"></div>
+		<div class="screen_name">変更箇所のみご入力ください。</div>
 	</div>
 </header>
 <!-- ▲ヘッダー▲ -->
@@ -45,73 +43,95 @@
 <!-- 重要 -->
 <div class="important">
 	<div class="important_contents">
-		１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
-		１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
-		１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
-		１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
+		個人情報保護の観点より、お名前以外のお客様の情報の表示をしておりません。
+		情報更新日を参考に変更箇所のみ入力ください。
 	</div>
 </div>
 <!-- 重要 -->
 
 <!-- メニュー -->
-<div class="menu" onclick="goReserve();">
-	<div class="menu_contents_left">
-	</div>
-	<div class="menu_contents_center">
-		予約
-	</div>
-	<div class="menu_contents_right">
-	</div>
-</div>
-<div class="menu">
-	<div class="menu_contents_left">
-	</div>
-	<div class="menu_contents_center">
-		スペースを検索して予約
-	</div>
-	<div class="menu_contents_right">
-	</div>
-</div>
-<div class="menu">
-	<div class="menu_contents_left">
-	</div>
-	<div class="menu_contents_center">
-		<div>予約確認／変更／キャンセル</div>
-		<div>予約スペース　XX件</div>
-	</div>
-	<div class="menu_contents_right">
-	</div>
-</div>
-<div class="menu">
-	<div class="menu_contents_left">
-	</div>
-	<div class="menu_contents_center">
-		予約履歴
-	</div>
-	<div class="menu_contents_right">
-	</div>
-</div>
-<!-- メニュー -->
+<table class="mainTable">
+	<colgroup class="title1"></colgroup>
+	<colgroup class="title2"></colgroup>
+	<colgroup class="content"></colgroup>
+	<colgroup class="update"></colgroup>
+	<tr>
+		<td colspan=2></td>
+		<td>現契約</td>
+		<td>情報更新日</td>
+	</tr>
+	<tr>
+		<td colspan=2 class="contentsHead">借主指名</td>
+		<td class="contentsBody">積水　太郎</td>
+		<td class="contentsFoot">2021年3月</td>
+	</tr>
+	<tr>
+		<td colspan=2 class="contentsHead">固定電話</td>
+		<td class="contentsBody">＊＊＊＊＊＊＊<input type="button" value="変更" /></td>
+		<td class="contentsFoot">2021年3月</td>
+	</tr>
+	<tr>
+		<td colspan=2 class="contentsHead">携帯電話</td>
+		<td class="contentsBody">＊＊＊＊＊＊＊<input type="button" value="変更" /></td>
+		<td class="contentsFoot">2021年3月</td>
+	</tr>
+	<tr>
+		<td rowspan=3 class="contentsHead">勤務先</td>
+		<td class="contentsHead">社名</td>
+		<td class="contentsBody">＊＊＊＊＊＊＊<input type="button" value="変更" /></td>
+		<td class="contentsFoot">2021年3月</td>
+	</tr>
+	<tr>
+		<td class="contentsHead">電話番号</td>
+		<td class="contentsBody">＊＊＊＊＊＊＊<input type="button" value="変更" /></td>
+		<td class="contentsFoot">2021年3月</td>
+	</tr>
+	<tr>
+		<td class="contentsHead">所在地</td>
+		<td class="contentsBody">＊＊＊＊＊＊＊<input type="button" value="変更" /></td>
+		<td class="contentsFoot">2021年3月</td>
+	</tr>
+	<tr>
+		<td rowspan=2 class="contentsHead">緊急連絡先</td>
+		<td class="contentsHead">氏名</td>
+		<td class="contentsBody">＊＊＊＊＊＊＊<input type="button" value="変更" /></td>
+		<td class="contentsFoot">2021年3月</td>
+	</tr>
+	<tr>
+		<td class="contentsHead">電話番号</td>
+		<td class="contentsBody">＊＊＊＊＊＊＊<input type="button" value="変更" /></td>
+		<td class="contentsFoot">2021年3月</td>
+	</tr>
+	<tr>
+		<td colspan=2 class="contentsHead">連帯保証人</td>
+		<td class="contentsBody">保証人・保証会社の変更は営業所までご連絡ください。</td>
+		<td class="contentsFoot">2021年3月</td>
+	</tr>
+</table>
+<table>
+	<tr>
+		<td rowspan=4>居住者①</td>
+		<td>お名前</td>
+		<td>積水　花子<input type="button" value="抹消" /></td>
+		<td>2021年3月</td>
+	</tr>
+	<tr>
+		<td>生年月日</td>
+		<td>＊＊＊＊＊＊＊<input type="button" value="変更" /></td>
+		<td>2021年3月</td>
+	</tr>
+	<tr>
+		<td>連絡先</td>
+		<td>＊＊＊＊＊＊＊<input type="button" value="変更" /></td>
+		<td>2021年3月</td>
+	</tr>
+	<tr>
+		<td>勤務先</td>
+		<td>＊＊＊＊＊＊＊<input type="button" value="変更" /></td>
+		<td>2021年3月</td>
+	</tr>
 
-<!-- お知らせ -->
-<div class="information">
-	<div class="information_content">
-		<div>2021/02/07【お知らせ】</div>
-		<div>
-			ああああああああああああああああ
-			いいいいいいいいいいいいいいいいいいうううううううううううううううううううう
-		</div>
-	</div>
-	<hr class="information_slash"/>
-	<div class="information_content">
-		<div>2020/01/31【お知らせ】</div>
-		<div>
-			ああああああああああああああああ
-			いいいいいいいいいいいいいいいいいい
-		</div>
-	</div>
-</div>
-<!-- お知らせ -->
+</table>
 
 
 <!-- ▼フッター▼ -->
