@@ -85,7 +85,7 @@ header{
 	vertical-align: middle;
 }
 .back {
-	width: 30%;
+--	width: 30%;
 	display: table-cell;
 	text-align: left;
 	padding: 3%;
