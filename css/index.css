@@ -155,6 +155,21 @@ table {
 	padding: 3px;
 }
 
+.contentsBodyBox {
+	width: 100%;
+	display: table;
+}
+
+.contentsBodyBoxLeft {
+	text-align: left;
+	display: table-cell;
+}
+
+.contentsBodyBoxRight {
+	text-align: right;
+	display: table-cell;
+}
+
 .contentsFoot {
 	text-align: center;
 	padding: 3px;
