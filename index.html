@@ -68,14 +68,19 @@
 	<tr>
 		<td colspan=2 class="contentsHead">固定電話</td>
 		<td class="contentsBody">
-			<div class="contentsBodyBox">
+			<div id="readItem1" class="contentsBodyBox">
 				<div class="contentsBodyBoxLeft">※※※※※</div>
 				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" />
+					<input type="button" value="変更" onclick="changeContents('readItem1', 'editItem1', 'editDate1');"/>
+				</div>
+			</div>
+			<div id="editItem1" class="contentsBodyBox displayNone">
+				<div>
+					<input class="inputContents" type="text" placeholder="例）09012345678" />
 				</div>
 			</div>
 		</td>
-		<td class="contentsFoot">2021年3月</td>
+		<td id="editDate1" class="contentsFoot">2021年3月</td>
 	</tr>
 	<tr>
 		<td colspan=2 class="contentsHead">携帯電話</td>
