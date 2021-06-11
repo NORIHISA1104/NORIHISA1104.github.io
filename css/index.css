@@ -178,3 +178,11 @@ table {
 .kyojusya {
 	margin-top: 20px;
 }
+
+.displayNone {
+	display: none;
+}
+
+.inputContents {
+	width: 100%;
+}
