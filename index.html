@@ -62,7 +62,10 @@
 	</tr>
 	<tr>
 		<td colspan=2 class="contentsHead">借主氏名</td>
-		<td class="contentsBody">積水　太郎</td>
+		<td class="contentsBody">
+			<div class="keiyakusyaName">積水　太郎</div>
+			<div class="meigiText">契約名義の変更・ご結婚などによるお名前の変更については、営業所までご連絡ください。</div>
+		</td>
 		<td class="contentsFoot">2021年3月</td>
 	</tr>
 	<tr>
@@ -76,7 +79,7 @@
 			</div>
 			<div id="editItem1" class="contentsBodyBox displayNone">
 				<div>
-					<input class="inputContents" type="text" placeholder="例）09012345678" />
+					<input class="inputContents" type="text" placeholder="例）090-1234-5678" />
 				</div>
 			</div>
 		</td>
@@ -85,76 +88,106 @@
 	<tr>
 		<td colspan=2 class="contentsHead">携帯電話</td>
 		<td class="contentsBody">
-			<div class="contentsBodyBox">
+			<div id="readItem2" class="contentsBodyBox">
 				<div class="contentsBodyBoxLeft">※※※※※</div>
 				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" />
+					<input type="button" value="変更" onclick="changeContents('readItem2', 'editItem2', 'editDate2');"/>
+				</div>
+			</div>
+			<div id="editItem2" class="contentsBodyBox displayNone">
+				<div>
+					<input class="inputContents" type="text" placeholder="例）090-1234-5678" />
 				</div>
 			</div>
 		</td>
-		<td class="contentsFoot">2021年3月</td>
+		<td id="editDate2" class="contentsFoot">2021年3月</td>
 	</tr>
 	<tr>
 		<td rowspan=3 class="contentsHead">勤務先</td>
 		<td class="contentsHead">社名</td>
 		<td class="contentsBody">
-			<div class="contentsBodyBox">
+			<div id="readItem3" class="contentsBodyBox">
 				<div class="contentsBodyBoxLeft">※※※※※</div>
 				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" />
+					<input type="button" value="変更" onclick="changeContents('readItem3', 'editItem3', 'editDate3');"/>
+				</div>
+			</div>
+			<div id="editItem3" class="contentsBodyBox displayNone">
+				<div>
+					<input class="inputContents" type="text" placeholder="全角XX文字" />
 				</div>
 			</div>
 		</td>
-		<td class="contentsFoot">2021年3月</td>
+		<td id="editDate3" class="contentsFoot">2021年3月</td>
 	</tr>
 	<tr>
 		<td class="contentsHead">電話番号</td>
 		<td class="contentsBody">
-			<div class="contentsBodyBox">
+			<div id="readItem4" class="contentsBodyBox">
 				<div class="contentsBodyBoxLeft">※※※※※</div>
 				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" />
+					<input type="button" value="変更" onclick="changeContents('readItem4', 'editItem4', 'editDate4');"/>
+				</div>
+			</div>
+			<div id="editItem4" class="contentsBodyBox displayNone">
+				<div>
+					<input class="inputContents" type="text" placeholder="例）090-1234-5678" />
 				</div>
 			</div>
 		</td>
-		<td class="contentsFoot">2021年3月</td>
+		<td id="editDate4" class="contentsFoot">2021年3月</td>
 	</tr>
 	<tr>
 		<td class="contentsHead">所在地</td>
 		<td class="contentsBody">
-			<div class="contentsBodyBox">
+			<div id="readItem5" class="contentsBodyBox">
 				<div class="contentsBodyBoxLeft">※※※※※</div>
 				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" />
+					<input type="button" value="変更" onclick="changeContents('readItem5', 'editItem5', 'editDate5');"/>
+				</div>
+			</div>
+			<div id="editItem5" class="contentsBodyBox displayNone">
+				<div>
+					<input class="inputContents" type="text" placeholder="全角XX文字" />
 				</div>
 			</div>
 		</td>
-		<td class="contentsFoot">2021年3月</td>
+		<td id="editDate5" class="contentsFoot">2021年3月</td>
 	</tr>
 	<tr>
 		<td rowspan=2 class="contentsHead">緊急連絡先</td>
 		<td class="contentsHead">氏名</td>
 		<td class="contentsBody">
-			<div class="contentsBodyBox">
+			<div id="readItem6" class="contentsBodyBox">
 				<div class="contentsBodyBoxLeft">※※※※※</div>
 				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" />
+					<input type="button" value="変更" onclick="changeContents('readItem6', 'editItem6', 'editDate6');"/>
+				</div>
+			</div>
+			<div id="editItem6" class="contentsBodyBox displayNone">
+				<div>
+					<input class="inputContents" type="text" placeholder="全角XX文字" />
 				</div>
 			</div>
 		</td>
-		<td class="contentsFoot">2021年3月</td>
+		<td id="editDate6" class="contentsFoot">2021年3月</td>
 	</tr>
 	<tr>
 		<td class="contentsHead">電話番号</td>
 		<td class="contentsBody">
-			<div class="contentsBodyBox">
+			<div id="readItem7" class="contentsBodyBox">
 				<div class="contentsBodyBoxLeft">※※※※※</div>
 				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" />
+					<input type="button" value="変更" onclick="changeContents('readItem7', 'editItem7', 'editDate7');"/>
+				</div>
+			</div>
+			<div id="editItem7" class="contentsBodyBox displayNone">
+				<div>
+					<input class="inputContents" type="text" placeholder="例）090-1234-5678" />
 				</div>
 			</div>
 		</td>
-		<td class="contentsFoot">2021年3月</td>
+		<td id="editDate7" class="contentsFoot">2021年3月</td>
 	</tr>
 	<tr>
 		<td colspan=2 class="contentsHead">連帯保証人</td>
@@ -216,8 +249,21 @@
 		</td>
 		<td>2021年3月</td>
 	</tr>
-
 </table>
+
+<div style="text-align: center; margin-top: 20px;">
+	<input type="button" value="+居住者を追加する" />
+</div>
+
+<div style="display: table; text-align: center; width: 100%; margin-top: 20px;">
+	<div style="display: table-cell; text-align: right; padding-right: 10px;">
+		<input type="button" value="もとに戻す" />
+	</div>
+	<div style="display: table-cell; text-align: left; padding-left: 10px;">
+		<input type="button" value="確認画面へ" />
+	</div>
+</div>
+
 
 
 <!-- ▼フッター▼ -->
