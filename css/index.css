@@ -186,3 +186,11 @@ table {
 .inputContents {
 	width: 100%;
 }
+
+.keiyakusyaName {
+	font-weight: bold;
+}
+
+.meigiText {
+	font-size: 9pt;
+}
