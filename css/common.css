@@ -41,7 +41,6 @@ header{
 .top{
 	display: table;
 	width: 100%;
-	background:url(img/header_bg.gif) repeat-x;
 	background-image:-moz-linear-gradient(top, #0093B5, #00769E);
 	background-image:-webkit-gradient(linear, center top, center bottom, from(#0093B5), to(#00769E));
 	background-image:-o-linear-gradient(top, #0093B5, #00769E);
@@ -54,14 +53,13 @@ header{
 .screen{
 	display: table;
 	width: 100%;
-	background:url(img/header_bg.gif) repeat-x;
-	background-image:-moz-linear-gradient(top, #cfd9df, #e2ebf0);
-	background-image:-webkit-gradient(linear, center top, center bottom, from(#cfd9df), to(#e2ebf0));
-	background-image:-o-linear-gradient(top, #cfd9df, #e2ebf0);
-	background-image:linear-gradient(top, #cfd9df, #e2ebf0);
-	border-bottom:solid 1px #cfd9df;
+	background-image:-moz-linear-gradient(top, rgb(255,243,245), rgb(255,243,245));
+	background-image:-webkit-gradient(linear, center top, center bottom, from(rgb(255,243,245)), to(rgb(255,243,245)));
+	background-image:-o-linear-gradient(top, rgb(255,243,245), rgb(255,243,245));
+	background-image:linear-gradient(top, rgb(255,243,245), rgb(255,243,245));
+	border-bottom:solid 1px rgb(255,243,245);
 	color:#000;
-	text-shadow:1px 1px 1px #e2ebf0;
+	text-shadow:1px 1px 1px rgb(255,243,245);
 }
 
 .logo {
