@@ -298,13 +298,13 @@ input[type="tel"]:focus {
 }
 
 select {
-  border: 2px solid #aaa;
-  border-radius: 4px;
-  --margin: 8px 0;
-  outline: none;
-  padding: 3px;
-  box-sizing: border-box;
-  transition: 0.3s;
+  --border: 2px solid #aaa;
+  --border-radius: 4px;
+  ----margin: 8px 0;
+  --outline: none;
+  --padding: 3px;
+  --box-sizing: border-box;
+  --transition: 0.3s;
 }
 
 select:focus {
