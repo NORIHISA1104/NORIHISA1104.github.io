@@ -90,3 +90,10 @@ function addKyojusya2() {
 		}
 	}
 }
+
+function deleteRow(){
+	document.getElementById("row1").style.display = 'none';
+	document.getElementById("row2").style.display = 'none';
+	document.getElementById("row3").style.display = 'none';
+	document.getElementById("row4").style.display = 'none';
+}
