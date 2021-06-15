@@ -78,3 +78,14 @@ $('#text4').focus(function(){
 }).blur(function(){
     $('.password_box').animate({borderTopColor: '#d3d3d3', borderLeftColor: '#d3d3d3', borderRightColor: '#d3d3d3', borderBottomColor: '#d3d3d3'}, 200);
 });
+
+
+
+function addKyojusya2() {
+	for(var i=2; i<=5; i++){
+		if(document.getElementById("kyojusya" + i).style.display == "none"){
+			document.getElementById("kyojusya" + i).style.display = "block";
+			break;
+		}
+	}
+}

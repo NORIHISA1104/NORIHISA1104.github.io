@@ -51,7 +51,7 @@
 
 <!-- 借主情報 -->
 <div style="width: 100%; display: table; background-color: rgb(136,0,0); color: white; ">
-	<div style="display: table-cell; width: 50%; padding: 5px; font-size: 14pt">借主様情報</div>
+	<div style="display: table-cell; width: 50%; padding: 5px; font-size: 14pt">契約者情報</div>
 	<div style="display: table-cell; width: 50%; text-align: right; padding: 5px;">情報更新日</div>
 </div>
 
@@ -75,79 +75,126 @@
 </div>
 <div id="editItem1" style="width: 100%; display: none;">
 	<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
-		<input type="text" />
+		<input type="tel" placeholder="例）0612345678"/>
 	</div>
 </div>
 
 <!-- 携帯電話 -->
 <div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
 	<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">携帯電話</div>
-	<div style="display: table-cell; width: 50%; text-align: right; padding: 5px;">2020年3月</div>
+	<div id="editDate2" style="display: table-cell; width: 50%; text-align: right; padding: 5px;">2020年3月</div>
 </div>
-<div style="width: 100%; display: table;">
+<div id="readItem2" style="width: 100%; display: table;">
 	<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">※※※※※※</div>
 	<div style="display: table-cell; width: 100%; text-align: right; padding: 10px;">
-		<input type="button" value="変更" />
+		<input type="button" value="変更" onclick="changeContents('readItem2', 'editItem2', 'editDate2');"/>
+	</div>
+</div>
+<div id="editItem2" style="width: 100%; display: none;">
+	<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+		<input type="tel" placeholder="例）09012345678"/>
 	</div>
 </div>
 
 <!-- 勤務先社名 -->
 <div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
 	<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">勤務先：社名</div>
-	<div style="display: table-cell; width: 50%; text-align: right; padding: 5px;">2020年3月</div>
+	<div id="editDate3" style="display: table-cell; width: 50%; text-align: right; padding: 5px;">2020年3月</div>
 </div>
-<div style="width: 100%; display: table;">
+<div id="readItem3" style="width: 100%; display: table;">
 	<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">※※※※※※</div>
 	<div style="display: table-cell; width: 100%; text-align: right; padding: 10px;">
-		<input type="button" value="変更" />
+		<input type="button" value="変更" onclick="changeContents('readItem3', 'editItem3', 'editDate3');"/>
+	</div>
+</div>
+<div id="editItem3" style="width: 100%; display: none;">
+	<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+		<input type="text" placeholder="全角５０文字" style="width: 90%;"/>
 	</div>
 </div>
 
 <!-- 勤務先電話番号 -->
 <div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
 	<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">勤務先：電話番号</div>
-	<div style="display: table-cell; width: 50%; text-align: right; padding: 5px;">2020年3月</div>
+	<div id="editDate4" style="display: table-cell; width: 50%; text-align: right; padding: 5px;">2020年3月</div>
 </div>
-<div style="width: 100%; display: table;">
+<div id="readItem4" style="width: 100%; display: table;">
 	<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">※※※※※※</div>
 	<div style="display: table-cell; width: 100%; text-align: right; padding: 10px;">
-		<input type="button" value="変更" />
+		<input type="button" value="変更" onclick="changeContents('readItem4', 'editItem4', 'editDate4');"/>
+	</div>
+</div>
+<div id="editItem4" style="width: 100%; display: none;">
+	<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+		<input type="tel" placeholder="例）09012345678"/>
 	</div>
 </div>
 
 <!-- 勤務先所在地 -->
 <div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
 	<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">勤務先：所在地</div>
-	<div style="display: table-cell; width: 50%; text-align: right; padding: 5px;">2020年3月</div>
+	<div id="editDate5" style="display: table-cell; width: 50%; text-align: right; padding: 5px;">2020年3月</div>
 </div>
-<div style="width: 100%; display: table;">
+<div id="readItem5" style="width: 100%; display: table;">
 	<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">※※※※※※</div>
 	<div style="display: table-cell; width: 100%; text-align: right; padding: 10px;">
-		<input type="button" value="変更" />
+		<input type="button" value="変更" onclick="changeContents('readItem5', 'editItem5', 'editDate5');"/>
+	</div>
+</div>
+<div id="editItem5" style="width: 100%; display: none;">
+	<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+		<div style="margin-bottom: 5px;">
+			郵便番号
+		</div>
+		<div style="margin-bottom: 5px;">
+			<input type="text" placeholder="例）111-2222"/>
+		</div>
+		<div style="margin-bottom: 5px;">
+			都道府県・市区町村・番地
+		</div>
+		<div style="margin-bottom: 5px;">
+			<input type="text" placeholder="全角５０文字" style="width: 90%;"/>
+		</div>
+		<div style="margin-bottom: 5px;">
+			建物名・号室
+		</div>
+		<div>
+			<input type="text" placeholder="全角５０文字" style="width: 90%;"/>
+		</div>
 	</div>
 </div>
 
 <!-- 緊急連絡先氏名 -->
 <div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
 	<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">緊急連絡先：氏名</div>
-	<div style="display: table-cell; width: 50%; text-align: right; padding: 5px;">2020年3月</div>
+	<div id="editDate6" style="display: table-cell; width: 50%; text-align: right; padding: 5px;">2020年3月</div>
 </div>
-<div style="width: 100%; display: table;">
+<div id="readItem6" style="width: 100%; display: table;">
 	<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">※※※※※※</div>
 	<div style="display: table-cell; width: 100%; text-align: right; padding: 10px;">
-		<input type="button" value="変更" />
+		<input type="button" value="変更" onclick="changeContents('readItem6', 'editItem6', 'editDate6');"/>
+	</div>
+</div>
+<div id="editItem6" style="width: 100%; display: none;">
+	<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+		<input type="text" placeholder="全角５０文字" style="width: 90%;"/>
 	</div>
 </div>
 
 <!-- 緊急連絡先電話番号 -->
 <div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
 	<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">緊急連絡先：電話番号</div>
-	<div style="display: table-cell; width: 50%; text-align: right; padding: 5px;">2020年3月</div>
+	<div id="editDate7" style="display: table-cell; width: 50%; text-align: right; padding: 5px;">2020年3月</div>
 </div>
-<div style="width: 100%; display: table;">
+<div id="readItem7" style="width: 100%; display: table;">
 	<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">※※※※※※</div>
 	<div style="display: table-cell; width: 100%; text-align: right; padding: 10px;">
-		<input type="button" value="変更" />
+		<input type="button" value="変更" onclick="changeContents('readItem7', 'editItem7', 'editDate7');"/>
+	</div>
+</div>
+<div id="editItem7" style="width: 100%; display: none;">
+	<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+		<input type="tel" placeholder="例）09012345678"/>
 	</div>
 </div>
 
@@ -162,15 +209,450 @@
 </div>
 
 <!-- 居住者情報 -->
-<div style="width: 100%; display: table; background-color: rgb(136,0,0); color: white; ">
-	<div style="display: table-cell; width: 50%; padding: 5px; font-size: 14pt">居住者情報</div>
-	<div style="display: table-cell; width: 50%; text-align: right; padding: 5px;">情報更新日</div>
+<div id="kyojusya1">
+	<div style="width: 100%; display: table; background-color: rgb(136,0,0); color: white; ">
+		<div style="display: table-cell; width: 50%; padding: 5px; font-size: 14pt">居住者情報１</div>
+		<div style="display: table-cell; width: 50%; text-align: right; padding: 5px;">情報更新日</div>
+	</div>
+	<!-- 居住者氏名 -->
+	<div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
+		<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">お名前</div>
+		<div id="editDate8" style="display: table-cell; width: 50%; text-align: right; padding: 5px;">2020年3月</div>
+	</div>
+	<div id="readItem8" style="width: 100%; display: table; ">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">※※※※※※</div>
+		<div style="display: table-cell; width: 100%; text-align: right; padding: 10px;">
+			<input type="button" value="変更" onclick="changeContents('readItem8', 'editItem8', 'editDate8');"/>
+		</div>
+	</div>
+	<div id="editItem8" style="width: 100%; display: none;">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+			<input type="text" placeholder="全角５０文字" style="width: 90%;"/>
+		</div>
+	</div>
+
+	<!-- 居住者生年月日 -->
+	<div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
+		<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">生年月日</div>
+		<div id="editDate9" style="display: table-cell; width: 50%; text-align: right; padding: 5px;">2020年3月</div>
+	</div>
+	<div id="readItem9" style="width: 100%; display: table; ">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">※※※※※※</div>
+		<div style="display: table-cell; width: 100%; text-align: right; padding: 10px;">
+			<input type="button" value="変更" onclick="changeContents('readItem9', 'editItem9', 'editDate9');"/>
+		</div>
+	</div>
+	<div id="editItem9" style="width: 100%; display: none;">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+			<select>
+				<option default></option>
+				<option>1970</option>
+			</select>
+			年
+			<select>
+				<option default></option>
+				<option>1</option>
+			</select>
+			月
+			<select>
+				<option default></option>
+				<option>1</option>
+			</select>
+			日
+		</div>
+	</div>
+
+	<!-- 居住者連絡先 -->
+	<div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
+		<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">連絡先</div>
+		<div id="editDate10" style="display: table-cell; width: 50%; text-align: right; padding: 5px;">2020年3月</div>
+	</div>
+	<div id="readItem10" style="width: 100%; display: table;">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">※※※※※※</div>
+		<div style="display: table-cell; width: 100%; text-align: right; padding: 10px;">
+			<input type="button" value="変更" onclick="changeContents('readItem10', 'editItem10', 'editDate10');"/>
+		</div>
+	</div>
+	<div id="editItem10" style="width: 100%; display: none;">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+			<input type="tel" placeholder="例）09012345678"/>
+		</div>
+	</div>
+
+	<!-- 居住者勤務先 -->
+	<div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
+		<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">勤務先</div>
+		<div id="editDate11" style="display: table-cell; width: 50%; text-align: right; padding: 5px;">2020年3月</div>
+	</div>
+	<div id="readItem11" style="width: 100%; display: table;">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">※※※※※※</div>
+		<div style="display: table-cell; width: 100%; text-align: right; padding: 10px;">
+			<input type="button" value="変更" onclick="changeContents('readItem11', 'editItem11', 'editDate11');"/>
+		</div>
+	</div>
+	<div id="editItem11" style="width: 100%; display: none;">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+			<div style="margin-bottom: 5px;">
+				郵便番号
+			</div>
+			<div style="margin-bottom: 5px;">
+				<input type="text" placeholder="例）111-2222"/>
+			</div>
+			<div style="margin-bottom: 5px;">
+				都道府県・市区町村・番地
+			</div>
+			<div style="margin-bottom: 5px;">
+				<input type="text" placeholder="全角５０文字" style="width: 90%;"/>
+			</div>
+			<div style="margin-bottom: 5px;">
+				建物名・号室
+			</div>
+			<div>
+				<input type="text" placeholder="全角５０文字" style="width: 90%;"/>
+			</div>
+		</div>
+	</div>
 </div>
 
+<!-- 居住者情報2 -->
+<div id="kyojusya2" style="display: none;">
+	<div style="width: 100%; display: table; background-color: rgb(136,0,0); color: white; ">
+		<div style="display: table-cell; width: 50%; padding: 5px; font-size: 14pt">居住者情報２</div>
+		<div style="display: table-cell; width: 50%; text-align: right; padding: 5px;"></div>
+	</div>
+	<!-- 居住者氏名 -->
+	<div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
+		<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">お名前</div>
+		<div id="editDate8" style="display: table-cell; width: 50%; text-align: right; padding: 5px;"></div>
+	</div>
+
+	<div id="editItem8" style="width: 100%;">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+			<input type="text" placeholder="全角５０文字" style="width: 90%;"/>
+		</div>
+	</div>
+
+	<!-- 居住者生年月日 -->
+	<div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
+		<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">生年月日</div>
+		<div id="editDate9" style="display: table-cell; width: 50%; text-align: right; padding: 5px;"></div>
+	</div>
+	<div id="editItem9" style="width: 100%;">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+			<select>
+				<option default></option>
+				<option>1970</option>
+			</select>
+			年
+			<select>
+				<option default></option>
+				<option>1</option>
+			</select>
+			月
+			<select>
+				<option default></option>
+				<option>1</option>
+			</select>
+			日
+		</div>
+	</div>
+
+	<!-- 居住者連絡先 -->
+	<div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
+		<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">連絡先</div>
+		<div id="editDate10" style="display: table-cell; width: 50%; text-align: right; padding: 5px;"></div>
+	</div>
+	<div id="editItem10" style="width: 100%;">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+			<input type="tel" placeholder="例）09012345678"/>
+		</div>
+	</div>
+
+	<!-- 居住者勤務先 -->
+	<div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
+		<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">勤務先</div>
+		<div id="editDate11" style="display: table-cell; width: 50%; text-align: right; padding: 5px;"></div>
+	</div>
+	<div id="editItem11" style="width: 100%;">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+			<div style="margin-bottom: 5px;">
+				郵便番号
+			</div>
+			<div style="margin-bottom: 5px;">
+				<input type="text" placeholder="例）111-2222"/>
+			</div>
+			<div style="margin-bottom: 5px;">
+				都道府県・市区町村・番地
+			</div>
+			<div style="margin-bottom: 5px;">
+				<input type="text" placeholder="全角５０文字" style="width: 90%;"/>
+			</div>
+			<div style="margin-bottom: 5px;">
+				建物名・号室
+			</div>
+			<div>
+				<input type="text" placeholder="全角５０文字" style="width: 90%;"/>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 居住者情報3 -->
+<div id="kyojusya3" style="display: none;">
+	<div style="width: 100%; display: table; background-color: rgb(136,0,0); color: white; ">
+		<div style="display: table-cell; width: 50%; padding: 5px; font-size: 14pt">居住者情報３</div>
+		<div style="display: table-cell; width: 50%; text-align: right; padding: 5px;"></div>
+	</div>
+	<!-- 居住者氏名 -->
+	<div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
+		<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">お名前</div>
+		<div id="editDate8" style="display: table-cell; width: 50%; text-align: right; padding: 5px;"></div>
+	</div>
+	<div id="editItem8" style="width: 100%;">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+			<input type="text" placeholder="全角５０文字" style="width: 90%;"/>
+		</div>
+	</div>
+
+	<!-- 居住者生年月日 -->
+	<div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
+		<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">生年月日</div>
+		<div id="editDate9" style="display: table-cell; width: 50%; text-align: right; padding: 5px;"></div>
+	</div>
+	<div id="editItem9" style="width: 100%;">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+			<select>
+				<option default></option>
+				<option>1970</option>
+			</select>
+			年
+			<select>
+				<option default></option>
+				<option>1</option>
+			</select>
+			月
+			<select>
+				<option default></option>
+				<option>1</option>
+			</select>
+			日
+		</div>
+	</div>
+
+	<!-- 居住者連絡先 -->
+	<div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
+		<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">連絡先</div>
+		<div id="editDate10" style="display: table-cell; width: 50%; text-align: right; padding: 5px;"></div>
+	</div>
+	<div id="editItem10" style="width: 100%;">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+			<input type="tel" placeholder="例）09012345678"/>
+		</div>
+	</div>
+
+	<!-- 居住者勤務先 -->
+	<div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
+		<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">勤務先</div>
+		<div id="editDate11" style="display: table-cell; width: 50%; text-align: right; padding: 5px;"></div>
+	</div>
+	<div id="editItem11" style="width: 100%;">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+			<div style="margin-bottom: 5px;">
+				郵便番号
+			</div>
+			<div style="margin-bottom: 5px;">
+				<input type="text" placeholder="例）111-2222"/>
+			</div>
+			<div style="margin-bottom: 5px;">
+				都道府県・市区町村・番地
+			</div>
+			<div style="margin-bottom: 5px;">
+				<input type="text" placeholder="全角５０文字" style="width: 90%;"/>
+			</div>
+			<div style="margin-bottom: 5px;">
+				建物名・号室
+			</div>
+			<div>
+				<input type="text" placeholder="全角５０文字" style="width: 90%;"/>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 居住者情報4 -->
+<div id="kyojusya4" style="display: none;">
+	<div style="width: 100%; display: table; background-color: rgb(136,0,0); color: white; ">
+		<div style="display: table-cell; width: 50%; padding: 5px; font-size: 14pt">居住者情報４</div>
+		<div style="display: table-cell; width: 50%; text-align: right; padding: 5px;"></div>
+	</div>
+	<!-- 居住者氏名 -->
+	<div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
+		<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">お名前</div>
+		<div id="editDate8" style="display: table-cell; width: 50%; text-align: right; padding: 5px;"></div>
+	</div>
+	<div id="editItem8" style="width: 100%;">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+			<input type="text" placeholder="全角５０文字" style="width: 90%;"/>
+		</div>
+	</div>
+
+	<!-- 居住者生年月日 -->
+	<div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
+		<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">生年月日</div>
+		<div id="editDate9" style="display: table-cell; width: 50%; text-align: right; padding: 5px;"></div>
+	</div>
+	<div id="editItem9" style="width: 100%;">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+			<select>
+				<option default></option>
+				<option>1970</option>
+			</select>
+			年
+			<select>
+				<option default></option>
+				<option>1</option>
+			</select>
+			月
+			<select>
+				<option default></option>
+				<option>1</option>
+			</select>
+			日
+		</div>
+	</div>
+
+	<!-- 居住者連絡先 -->
+	<div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
+		<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">連絡先</div>
+		<div id="editDate10" style="display: table-cell; width: 50%; text-align: right; padding: 5px;"></div>
+	</div>
+	<div id="editItem10" style="width: 100%;">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+			<input type="tel" placeholder="例）09012345678"/>
+		</div>
+	</div>
+
+	<!-- 居住者勤務先 -->
+	<div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
+		<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">勤務先</div>
+		<div id="editDate11" style="display: table-cell; width: 50%; text-align: right; padding: 5px;"></div>
+	</div>
+	<div id="editItem11" style="width: 100%;">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+			<div style="margin-bottom: 5px;">
+				郵便番号
+			</div>
+			<div style="margin-bottom: 5px;">
+				<input type="text" placeholder="例）111-2222"/>
+			</div>
+			<div style="margin-bottom: 5px;">
+				都道府県・市区町村・番地
+			</div>
+			<div style="margin-bottom: 5px;">
+				<input type="text" placeholder="全角５０文字" style="width: 90%;"/>
+			</div>
+			<div style="margin-bottom: 5px;">
+				建物名・号室
+			</div>
+			<div>
+				<input type="text" placeholder="全角５０文字" style="width: 90%;"/>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- 居住者情報5 -->
+<div id="kyojusya5" style="display: none;">
+	<div style="width: 100%; display: table; background-color: rgb(136,0,0); color: white; ">
+		<div style="display: table-cell; width: 50%; padding: 5px; font-size: 14pt">居住者情報５</div>
+		<div style="display: table-cell; width: 50%; text-align: right; padding: 5px;"></div>
+	</div>
+	<!-- 居住者氏名 -->
+	<div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
+		<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">お名前</div>
+		<div id="editDate8" style="display: table-cell; width: 50%; text-align: right; padding: 5px;"></div>
+	</div>
+	<div id="editItem8" style="width: 100%;">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+			<input type="text" placeholder="全角５０文字" style="width: 90%;"/>
+		</div>
+	</div>
+
+	<!-- 居住者生年月日 -->
+	<div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
+		<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">生年月日</div>
+		<div id="editDate9" style="display: table-cell; width: 50%; text-align: right; padding: 5px;"></div>
+	</div>
+	<div id="editItem9" style="width: 100%;">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+			<select>
+				<option default></option>
+				<option>1970</option>
+			</select>
+			年
+			<select>
+				<option default></option>
+				<option>1</option>
+			</select>
+			月
+			<select>
+				<option default></option>
+				<option>1</option>
+			</select>
+			日
+		</div>
+	</div>
+
+	<!-- 居住者連絡先 -->
+	<div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
+		<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">連絡先</div>
+		<div id="editDate10" style="display: table-cell; width: 50%; text-align: right; padding: 5px;"></div>
+	</div>
+	<div id="editItem10" style="width: 100%;">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+			<input type="tel" placeholder="例）09012345678"/>
+		</div>
+	</div>
+
+	<!-- 居住者勤務先 -->
+	<div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray; border-bottom: 1px solid gray;">
+		<div style="display: table-cell; width: 50%; font-weight: bold; padding: 5px; font-size: 12pt;">勤務先</div>
+		<div id="editDate11" style="display: table-cell; width: 50%; text-align: right; padding: 5px;"></div>
+	</div>
+	<div id="editItem11" style="width: 100%;">
+		<div style="display: table-cell; width: 100%; padding: 10px; font-size: 12pt;">
+			<div style="margin-bottom: 5px;">
+				郵便番号
+			</div>
+			<div style="margin-bottom: 5px;">
+				<input type="text" placeholder="例）111-2222"/>
+			</div>
+			<div style="margin-bottom: 5px;">
+				都道府県・市区町村・番地
+			</div>
+			<div style="margin-bottom: 5px;">
+				<input type="text" placeholder="全角５０文字" style="width: 90%;"/>
+			</div>
+			<div style="margin-bottom: 5px;">
+				建物名・号室
+			</div>
+			<div>
+				<input type="text" placeholder="全角５０文字" style="width: 90%;"/>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div style="width: 100%; display: table; background-color: #efefef; border-top: 1px solid gray;">
+</div>
+
+<div style="text-align: center; margin-top: 20px;">
+	<input type="button" value="+居住者を追加する" onclick="addKyojusya2();"/>
+</div>
 
 <div style="display: table; text-align: center; width: 100%; margin-top: 20px; margin-bottom: 20px;">
 	<div style="display: table-cell; text-align: right; padding-right: 10px;">
-		<input type="button" value="もとに戻す" onclick="window.location.href = 'index.html';"/>
+		<input type="button" value="もとに戻す" onclick="window.location.href = 'index2.html';"/>
 	</div>
 	<div style="display: table-cell; text-align: left; padding-left: 10px;">
 		<input type="button" value="確認画面へ" onclick="window.location.href = 'error.html';" />
