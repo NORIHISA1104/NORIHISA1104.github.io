@@ -298,7 +298,7 @@ input[type="tel"]:focus {
 }
 
 select {
-  border: 2px solid ;
+--  border: 2px solid ;
   border-radius: 4px;
   ----margin: 8px 0;
   outline: none;
