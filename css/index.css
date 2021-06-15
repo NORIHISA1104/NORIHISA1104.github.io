@@ -139,11 +139,11 @@ table {
 	background-color: #cfcfcf;
 }
 .content {
-	width: 45%;
+	width: 48%;
 }
 
 .update {
-	width: 25%;
+	width: 22%;
 }
 
 .contentsHead {
@@ -173,6 +173,7 @@ table {
 .contentsFoot {
 	text-align: center;
 	padding: 3px;
+	font-size: 10pt;
 }
 
 .kyojusya {
@@ -184,7 +185,7 @@ table {
 }
 
 .inputContents {
-	width: 100%;
+	width: 90%;
 }
 
 .keiyakusyaName {
@@ -193,4 +194,112 @@ table {
 
 .meigiText {
 	font-size: 9pt;
+}
+
+.bgblue {
+	background-color: rgb(218,227,243);
+}
+
+.fontblue {
+	color: blue;
+}
+
+.fontbold {
+	font-weight: bold;
+}
+
+.height40 {
+	height: 40px;
+}
+/*------------------------------------------------------------
+	セレクトボックス
+------------------------------------------------------------*/
+.cp_ipselect {
+	position: relative;
+	width: 90%;
+	margin-top: 7%;
+	margin-left: 5%;
+	--margin: 2em auto;
+	text-align: center;
+}
+.cp_sl06 {
+	position: relative;
+	font-family: inherit;
+	background-color: transparent;
+	width: 100%;
+	padding: 10px 10px 10px 0;
+--	font-size: 18px;
+	border-radius: 0;
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0, 0.3);
+}
+.cp_sl06:focus {
+	outline: none;
+	border-bottom: 1px solid rgba(0,0,0, 0);
+}
+.cp_ipselect .cp_sl06 {
+	appearance: none;
+	-webkit-appearance:none
+}
+.cp_ipselect select::-ms-expand {
+	display: none;
+}
+.cp_ipselect:after {
+	position: absolute;
+	top: 18px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	padding: 0;
+	content: '';
+	border-left: 6px solid transparent;
+	border-right: 6px solid transparent;
+	border-top: 6px solid rgba(0, 0, 0, 0.3);
+	pointer-events: none;
+}
+.cp_sl06_selectlabel {
+	color: rgba(0,0,0, 0.5);
+--	font-size: 18px;
+	font-weight: normal;
+	position: absolute;
+	pointer-events: none;
+	left: 0;
+	top: 10px;
+	transition: 0.2s ease all;
+}
+.cp_sl06:focus ~ .cp_sl06_selectlabel, .cp_sl06:valid ~ .cp_sl06_selectlabel {
+	color: #da3c41;
+	top: -20px;
+	transition: 0.2s ease all;
+--	font-size: 14px;
+}
+.cp_sl06_selectbar {
+	position: relative;
+	display: block;
+	width: 100%;
+}
+.cp_sl06_selectbar:before, .cp_sl06_selectbar:after {
+	content: '';
+	height: 2px;
+	width: 0;
+	bottom: 1px;
+	position: absolute;
+	background: #da3c41;
+	transition: 0.2s ease all;
+}
+.cp_sl06_selectbar:before {
+	left: 50%;
+}
+.cp_sl06_selectbar:after {
+	right: 50%;
+}
+.cp_sl06:focus ~ .cp_sl06_selectbar:before, .cp_sl06:focus ~ .cp_sl06_selectbar:after {
+	width: 50%;
+}
+.cp_sl06_highlight {
+	position: absolute;
+	top: 25%;
+	left: 0;
+	pointer-events: none;
+	opacity: 0.5;
 }

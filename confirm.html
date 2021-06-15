@@ -32,8 +32,9 @@
 	<div class="login_info"></div>
 </div>
 <div class="screen">
-	<div class="screen_name">変更箇所のみご入力ください。</div>
+	<div class="screen_name">入力内容をご確認ください。</div>
 </div>
+
 <!-- ▲ヘッダー▲ -->
 
 
@@ -68,34 +69,17 @@
 	</tr>
 	<tr class="height40">
 		<td colspan=2 class="contentsHead">固定電話</td>
-		<td class="contentsBody">
+		<td class="contentsBody bgblue">
 			<div id="readItem1" class="contentsBodyBox">
-				<div class="contentsBodyBoxLeft">※※※※※</div>
-				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" onclick="changeContents('readItem1', 'editItem1', 'editDate1');"/>
-				</div>
+				<div class="contentsBodyBoxLeft">090-8888-8888</div>
 			</div>
-			<div id="editItem1" class="contentsBodyBox displayNone">
-				<div>
-					<input class="inputContents" type="text" inputmode="tel" placeholder="例）090-1234-5678" />
-				</div>
-			</div>
-		</td>
-		<td id="editDate1" class="contentsFoot">2021年3月</td>
+		<td id="editDate1" class="contentsFoot bgblue"><div class="fontblue fontbold">2021年5月</div></td>
 	</tr>
 	<tr class="height40">
 		<td colspan=2 class="contentsHead">携帯電話</td>
 		<td class="contentsBody">
 			<div id="readItem2" class="contentsBodyBox">
 				<div class="contentsBodyBoxLeft">※※※※※</div>
-				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" onclick="changeContents('readItem2', 'editItem2', 'editDate2');"/>
-				</div>
-			</div>
-			<div id="editItem2" class="contentsBodyBox displayNone">
-				<div>
-					<input class="inputContents" type="text" inputmode="tel" placeholder="例）090-1234-5678" />
-				</div>
 			</div>
 		</td>
 		<td id="editDate2" class="contentsFoot">2021年3月</td>
@@ -106,14 +90,6 @@
 		<td class="contentsBody">
 			<div id="readItem3" class="contentsBodyBox">
 				<div class="contentsBodyBoxLeft">※※※※※</div>
-				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" onclick="changeContents('readItem3', 'editItem3', 'editDate3');"/>
-				</div>
-			</div>
-			<div id="editItem3" class="contentsBodyBox displayNone">
-				<div>
-					<input class="inputContents" type="text" placeholder="全角XX文字" />
-				</div>
 			</div>
 		</td>
 		<td id="editDate3" class="contentsFoot">2021年3月</td>
@@ -123,42 +99,21 @@
 		<td class="contentsBody">
 			<div id="readItem4" class="contentsBodyBox">
 				<div class="contentsBodyBoxLeft">※※※※※</div>
-				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" onclick="changeContents('readItem4', 'editItem4', 'editDate4');"/>
-				</div>
-			</div>
-			<div id="editItem4" class="contentsBodyBox displayNone">
-				<div>
-					<input class="inputContents" type="text" inputmode="tel" placeholder="例）090-1234-5678" />
-				</div>
 			</div>
 		</td>
 		<td id="editDate4" class="contentsFoot">2021年3月</td>
 	</tr>
-	<tr class="height40">
+	<tr>
 		<td class="contentsHead">所在地</td>
-		<td class="contentsBody">
+		<td class="contentsBody bgblue">
 			<div id="readItem5" class="contentsBodyBox">
-				<div class="contentsBodyBoxLeft">※※※※※</div>
-				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" onclick="changeContents('readItem5', 'editItem5', 'editDate5');"/>
-				</div>
-			</div>
-			<div id="editItem5" class="contentsBodyBox displayNone">
-				<div>
-					<div>
-						〒<input class="inputPostCode" type="text" placeholder="例）999-9999" style="width: 60%;" />
-					</div>
-					<div style="margin-top: 3px;">
-						<textarea  rows="4" cols="20"></textarea>
-					</div>
-<!--
-					<input class="inputContents" type="text" placeholder="全角XX文字" />
--->
+				<div class="contentsBodyBoxLeft">
+					<div>〒151-1123</div>
+					<div>大阪府大阪市福島区鷺洲２－３－４ツインクレスト１１０２</div>
 				</div>
 			</div>
 		</td>
-		<td id="editDate5" class="contentsFoot">2021年3月</td>
+		<td id="editDate5" class="contentsFoot bgblue"><div class="fontblue fontbold">2021年5月</div></td>
 	</tr>
 	<tr class="height40">
 		<td rowspan=2 class="contentsHead">緊急連絡先</td>
@@ -166,14 +121,6 @@
 		<td class="contentsBody">
 			<div id="readItem6" class="contentsBodyBox">
 				<div class="contentsBodyBoxLeft">※※※※※</div>
-				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" onclick="changeContents('readItem6', 'editItem6', 'editDate6');"/>
-				</div>
-			</div>
-			<div id="editItem6" class="contentsBodyBox displayNone">
-				<div>
-					<input class="inputContents" type="text" placeholder="全角XX文字" />
-				</div>
 			</div>
 		</td>
 		<td id="editDate6" class="contentsFoot">2021年3月</td>
@@ -183,14 +130,6 @@
 		<td class="contentsBody">
 			<div id="readItem7" class="contentsBodyBox">
 				<div class="contentsBodyBoxLeft">※※※※※</div>
-				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" onclick="changeContents('readItem7', 'editItem7', 'editDate7');"/>
-				</div>
-			</div>
-			<div id="editItem7" class="contentsBodyBox displayNone">
-				<div>
-					<input class="inputContents" type="text" inputmode="tel" placeholder="例）090-1234-5678" />
-				</div>
 			</div>
 		</td>
 		<td id="editDate7" class="contentsFoot">2021年3月</td>
@@ -206,67 +145,96 @@
 	<colgroup class="title2"></colgroup>
 	<colgroup class="content"></colgroup>
 	<colgroup class="update"></colgroup>
-	<tr>
+	<tr class="height40">
 		<td rowspan=4 class="contentsHead">居住者①</td>
 		<td class="contentsHead">お名前</td>
 		<td class="contentsBody">
 			<div class="contentsBodyBox">
 				<div class="contentsBodyBoxLeft">積水　花子</div>
-				<div class="contentsBodyBoxRight">
-					<input type="button" value="抹消" />
-				</div>
 			</div>
 		</td>
 		<td class="contentsFoot">2021年3月</td>
 	</tr>
-	<tr>
+	<tr class="height40">
 		<td class="contentsHead">生年月日</td>
 		<td class="contentsBody">
 			<div class="contentsBodyBox">
 				<div class="contentsBodyBoxLeft">※※※※※</div>
-				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" />
-				</div>
 			</div>
 		</td>
 		<td class="contentsFoot">2021年3月</td>
 	</tr>
-	<tr>
+	<tr class="height40">
 		<td class="contentsHead">連絡先</td>
 		<td class="contentsBody">
 			<div class="contentsBodyBox">
 				<div class="contentsBodyBoxLeft">※※※※※</div>
-				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" />
-				</div>
 			</div>
 		</td>
 		<td class="contentsFoot">2021年3月</td>
 	</tr>
-	<tr>
+	<tr class="height40">
 		<td class="contentsHead">勤務先</td>
 		<td class="contentsBody">
 			<div class="contentsBodyBox">
 				<div class="contentsBodyBoxLeft">※※※※※</div>
-				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" />
-				</div>
 			</div>
 		</td>
 		<td class="contentsFoot">2021年3月</td>
 	</tr>
+	<tr class="height40">
+		<td rowspan=4 class="contentsHead">居住者②</td>
+		<td class="contentsHead">お名前</td>
+		<td class="contentsBody bgblue">
+			<div class="contentsBodyBox">
+				<div class="contentsBodyBoxLeft">積水　一男</div>
+			</div>
+		</td>
+		<td class="contentsFoot bgblue"><div class="fontblue fontbold">2021年5月</div></td>
+	</tr>
+	<tr class="height40">
+		<td class="contentsHead">生年月日</td>
+		<td class="contentsBody bgblue">
+			<div class="contentsBodyBox">
+				<div class="contentsBodyBoxLeft">2020年 12月 12日</div>
+			</div>
+		</td>
+		<td class="contentsFoot bgblue"><div class="fontblue fontbold">2021年5月</div></td>
+	</tr>
+	<tr class="height40">
+		<td class="contentsHead">連絡先</td>
+		<td class="contentsBody">
+			<div class="contentsBodyBox">
+				<div class="contentsBodyBoxLeft"></div>
+			</div>
+		</td>
+		<td class="contentsFoot"></td>
+	</tr>
+	<tr class="height40">
+		<td class="contentsHead">勤務先</td>
+		<td class="contentsBody">
+			<div class="contentsBodyBox">
+				<div class="contentsBodyBoxLeft"></div>
+			</div>
+		</td>
+		<td class="contentsFoot"></td>
+	</tr>
 </table>
 
-<div style="text-align: center; margin-top: 20px;">
-	<input type="button" value="+居住者を追加する" onclick="addKyojusya();"/>
+<div style="width: 100%; text-align: center; margin-top: 20px;">
+	<div style="width: 85%; text-align: left; padding: 10px; border: dotted 1px gray; margin-left: auto; margin-right: auto;">
+		<div>※弊社より内容確認のご連絡をさせていただくことがございます。</div>
+		<div>※内容によりましては、申請をお受けできない場合がございます。</div>
+		<div>※虚偽の内容を申請された場合、契約違反となる場合がございます。</div>
+	</div>
 </div>
 
 <div style="display: table; text-align: center; width: 100%; margin-top: 20px; margin-bottom: 20px;">
 	<div style="display: table-cell; text-align: right; padding-right: 10px;">
-		<input type="button" value="もとに戻す" onclick="window.location.href = 'index.html';"/>
+		<input type="button" value="←戻って修正" onclick="window.location.href = 'error.html';"/>
 	</div>
 	<div style="display: table-cell; text-align: left; padding-left: 10px;">
-		<input type="button" value="確認画面へ" onclick="window.location.href = 'error.html';" />
+		<input type="button" value="申請をする" onclick="window.location.href = 'complete.html';"/>
 	</div>
 </div>
 
