@@ -1,0 +1,383 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+
+<title>契約者様・居住者様情報変更申請</title>
+
+<!--
+<link rel="stylesheet" type="text/css" href="./css/common.css" media="screen">
+<link rel="stylesheet" type="text/css" href="./css/index.css" media="screen">
+-->
+<link rel="stylesheet" type="text/css" href="./css/index3.css" media="screen">
+<script src="./js/jquery-3.6.0.min.js" charset="UTF-8"></script>
+<script src="./js/index.js" charset="UTF-8"></script>
+<!--
+▼ファビコン設置▼
+※ファビコンを使用する際は
+コメントアウトを消してください。
+-->
+
+<!--
+<link rel="shortcut icon" href="icon URL.ico"> 
+-->
+
+<!--▲ファビコン設置▲-->
+
+</head>
+<body>
+
+<div class="portal-wrapper">
+	<section class="p-container">
+		<h3 class="p-title-1">
+			<span class="p-title__main">ご契約者様・居住者様情報変更申請</span>
+			<span class="p-title__action"></span>
+		</h3>
+		<div class="screen">
+			<div class="screen_name" style="color: red;">入力内容に誤りがあります。</div>
+		</div>
+
+
+
+		<div class="important">
+			<div class="important_contents">
+				個人情報保護の観点より、お名前以外のお客様の情報の表示をしておりません。
+				情報更新日を参考に変更箇所のみ入力ください。
+			</div>
+		</div>
+
+		<!-- 借主情報 -->
+		<h4 class="p-title-2 theme-bg-color">
+			<span class="p-title__main">ご契約者情報</span>
+			<span class="p-title__action">情報更新日</span>
+		</h4>
+		<div class="p-text"></div>
+		<h5 class="p-title-3 theme-border-color">
+			<span class="p-title__main">借主情報</span>
+			<span class="p-title__action"></span>
+		</h5>
+		<div class="p-list">
+			<div class="p-list__label">借主氏名</div>
+			<div class="p-list__content">積水太郎</div>
+		</div>
+		<div class="p-list">
+			<div class="p-list2">
+				<div class="p-list__label" style="">固定電話</div>
+				<div class="p-list__label" style=""></div>
+			</div>
+			<div class="p-list2">
+				<div class="p-list__content nowrap">
+					<input type="tel" placeholder="例）0612345678" value="09088888888"/>
+				</div>
+			</div>
+		</div>
+		<div class="p-list">
+			<div class="p-list2">
+				<div class="p-list__label" style="">携帯電話</div>
+				<div class="p-list__label" style="">2021年3月</div>
+			</div>
+			<div class="p-list2">
+				<div class="p-list__content">※※※※※</div>
+				<div>
+					<a href="/termination/room_contracts/new" class="p-button p-button--2 p-button-change theme-border-color theme-color on-hover">変更</a>
+				</div>
+			</div>
+		</div>
+<!--
+		<div class="p-list">
+			<div class="p-list__label">固定電話</div>
+			<div class="p-list__content">※※※※※</div>
+		</div>
+		<div class="p-list">
+			<div class="p-list__label">携帯電話</div>
+			<div class="p-list__content">※※※※※</div>
+		</div>
+-->
+		<h5 class="p-title-3 theme-border-color">
+			<span class="p-title__main">勤務先情報</span>
+			<span class="p-title__action"></span>
+		</h5>
+		<div class="p-list">
+			<div class="p-list2">
+				<div class="p-list__label" style="">社名</div>
+				<div class="p-list__label" style="">2021年3月</div>
+			</div>
+			<div class="p-list2">
+				<div class="p-list__content">※※※※※</div>
+				<div>
+					<a href="/termination/room_contracts/new" class="p-button p-button--2 p-button-change theme-border-color theme-color on-hover">変更</a>
+				</div>
+			</div>
+		</div>
+		<div class="p-list">
+			<div class="p-list2">
+				<div class="p-list__label" style="">電話番号</div>
+				<div class="p-list__label" style=""></div>
+			</div>
+			<div class="p-list2">
+				<div class="p-list__content nowrap">
+					<input type="tel" placeholder="例）0612345678" />
+				</div>
+			</div>
+		</div>
+		<div class="p-list">
+			<div class="p-list2">
+				<div class="p-list__label" style=""></div>
+				<div class="p-list__label" style=""></div>
+			</div>
+			<div>
+				<div class="p-list__label" style="">郵便番号</div>
+				<div style="margin-bottom: 5px;">
+					<input id="editItemField5" type="text" placeholder="例）111-2222" value="151-1123"/>
+				</div>
+				<div class="p-list__label" style="">都道府県・市区町村・番地</div>
+				<div style="margin-bottom: 5px;">
+					<input type="text" placeholder="全角５０文字" style="width: 90%;" value="大阪府大阪市福島区鷺洲２－３－４"/>
+				</div>
+				<div class="p-list__label" style="">建物名・号室</div>
+				<div>
+					<input type="text" placeholder="全角５０文字" style="width: 90%;" value="ツインクレスト１１０２"/>
+				</div>
+			</div>
+		</div>
+
+<!--
+		<div class="p-list">
+			<div class="p-list__label">社名</div>
+			<div class="p-list__content">※※※※※</div>
+		</div>
+		<div class="p-list">
+			<div class="p-list__label">電話番号</div>
+			<div class="p-list__content">※※※※※</div>
+		</div>
+		<div class="p-list">
+			<div class="p-list__label">所在地</div>
+			<div class="p-list__content">※※※※※</div>
+		</div>
+-->
+		<h5 class="p-title-3 theme-border-color">
+			<span class="p-title__main">緊急連絡先</span>
+			<span class="p-title__action"></span>
+		</h5>
+		<div class="p-list">
+			<div class="p-list2">
+				<div class="p-list__label" style="">氏名</div>
+				<div class="p-list__label" style="">2021年3月</div>
+			</div>
+			<div class="p-list2">
+				<div class="p-list__content">※※※※※</div>
+				<div>
+					<a href="/termination/room_contracts/new" class="p-button p-button--2 p-button-change theme-border-color theme-color on-hover">変更</a>
+				</div>
+			</div>
+		</div>
+		<div class="p-list">
+			<div class="p-list2">
+				<div class="p-list__label" style="">電話番号</div>
+				<div class="p-list__label" style="">2021年3月</div>
+			</div>
+			<div class="p-list2">
+				<div class="p-list__content">※※※※※</div>
+				<div>
+					<a href="/termination/room_contracts/new" class="p-button p-button--2 p-button-change theme-border-color theme-color on-hover">変更</a>
+				</div>
+			</div>
+		</div>
+
+<!--
+		<div class="p-list">
+			<div class="p-list__label">氏名</div>
+			<div class="p-list__content">※※※※※</div>
+		</div>
+		<div class="p-list">
+			<div class="p-list__label">電話番号</div>
+			<div class="p-list__content">※※※※※</div>
+		</div>
+-->
+		<h5 class="p-title-3 theme-border-color">
+			<span class="p-title__main">連帯保証人</span>
+			<span class="p-title__action"></span>
+		</h5>
+		<div class="p-list">
+			<div class="p-list__label"></div>
+			<div class="p-list__content">保証人・保証会社の変更は営業所までご連絡ください。</div>
+		</div>
+
+		<div class="p-text"></div>
+
+		<!-- 居住者情報 -->
+		<h4 class="p-title-2 theme-bg-color">
+			<span class="p-title__main">居住者情報</span>
+			<span class="p-title__action">情報更新日</span>
+		</h4>
+		<div class="p-text"></div>
+		<h5 class="p-title-3 theme-border-color">
+			<span class="p-title__main">居住者情報１</span>
+			<span class="p-title__action"></span>
+		</h5>
+		<div class="p-list">
+			<div class="p-list2">
+				<div class="p-list__label" style="">お名前</div>
+				<div class="p-list__label" style="">2021年3月</div>
+			</div>
+			<div class="p-list2">
+				<div class="p-list__content">積水花子</div>
+				<div>
+					<a href="/termination/room_contracts/new" class="p-button p-button--2 p-button-change theme-border-color on-hover" style="background-color: #880000; color: #fff;">抹消</a>
+				</div>
+			</div>
+		</div>
+		<div class="p-list">
+			<div class="p-list2">
+				<div class="p-list__label" style="">生年月日</div>
+				<div class="p-list__label" style="">2021年3月</div>
+			</div>
+			<div class="p-list2">
+				<div class="p-list__content">※※※※※</div>
+				<div>
+					<a href="/termination/room_contracts/new" class="p-button p-button--2 p-button-change theme-border-color theme-color on-hover">変更</a>
+				</div>
+			</div>
+		</div>
+		<div class="p-list">
+			<div class="p-list2">
+				<div class="p-list__label" style="">連絡先</div>
+				<div class="p-list__label" style="">2021年3月</div>
+			</div>
+			<div class="p-list2">
+				<div class="p-list__content">※※※※※</div>
+				<div>
+					<a href="/termination/room_contracts/new" class="p-button p-button--2 p-button-change theme-border-color theme-color on-hover">変更</a>
+				</div>
+			</div>
+		</div>
+		<div class="p-list">
+			<div class="p-list2">
+				<div class="p-list__label" style="">勤務先</div>
+				<div class="p-list__label" style="">2021年3月</div>
+			</div>
+			<div class="p-list2">
+				<div class="p-list__content">※※※※※</div>
+				<div>
+					<a href="/termination/room_contracts/new" class="p-button p-button--2 p-button-change theme-border-color theme-color on-hover">変更</a>
+				</div>
+			</div>
+		</div>
+<!--
+		<div class="p-list">
+			<div class="p-list__label">お名前</div>
+			<div class="p-list__content">積水花子</div>
+		</div>
+		<div class="p-list">
+			<div class="p-list__label">生年月日</div>
+			<div class="p-list__content">※※※※※</div>
+		</div>
+		<div class="p-list">
+			<div class="p-list__label">連絡先</div>
+			<div class="p-list__content">※※※※※</div>
+		</div>
+		<div class="p-list">
+			<div class="p-list__label">勤務先</div>
+			<div class="p-list__content">※※※※※</div>
+		</div>
+-->
+
+		<h5 class="p-title-3 theme-border-color">
+			<span class="p-title__main">居住者情報２</span>
+			<span class="p-title__action"></span>
+		</h5>
+		<div class="p-list">
+			<div class="p-list2">
+				<div class="p-list__label" style="">お名前</div>
+				<div class="p-list__label" style=""></div>
+			</div>
+			<div class="p-list2">
+				<div class="p-list__content nowrap">
+					<input type="text" value="積水　長子" />
+				</div>
+			</div>
+		</div>
+		<div class="p-list">
+			<div class="p-list2">
+				<div class="p-list__label" style="">生年月日</div>
+				<div class="p-list__label" style=""></div>
+			</div>
+			<div class="p-list2">
+				<div class="">
+					<select style="background-color: rgb(255,243,245);" >
+						<option default></option>
+						<option>1970</option>
+					</select>
+					年
+					<select style="background-color: rgb(255,243,245);">
+						<option default></option>
+						<option>1</option>
+					</select>
+					月
+					<select style="background-color: rgb(255,243,245);">
+						<option default></option>
+						<option>1</option>
+					</select>
+					日
+				</div>
+				<div style="padding-left: 10px; padding-bottom: 10px; font-size: 10pt; color: red;">生年月日を入力してください。</div>
+			</div>
+		</div>
+		<div class="p-list">
+			<div class="p-list2">
+				<div class="p-list__label" style="">連絡先</div>
+				<div class="p-list__label" style=""></div>
+			</div>
+			<div class="p-list2">
+				<div>
+					<input type="tel" placeholder="例）09012345678" style="width: 90%;" value=""/>
+				</div>
+			</div>
+		</div>
+		<div class="p-list">
+			<div class="p-list2">
+				<div class="p-list__label" style=""></div>
+				<div class="p-list__label" style=""></div>
+			</div>
+			<div>
+				<div class="p-list__label" style="">郵便番号</div>
+				<div style="margin-bottom: 5px;">
+					<input id="editItemField5" type="text" placeholder="例）111-2222" value=""/>
+				</div>
+				<div class="p-list__label" style="">都道府県・市区町村・番地</div>
+				<div style="margin-bottom: 5px;">
+					<input type="text" placeholder="全角５０文字" style="width: 90%;" value=""/>
+				</div>
+				<div class="p-list__label" style="">建物名・号室</div>
+				<div>
+					<input type="text" placeholder="全角５０文字" style="width: 90%;" value=""/>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="p-text" >
+			<a href="/termination/room_contracts/new" class="p-button p-button--2 theme-border-color theme-color on-hover block">居住者を追加する</a>
+		</div>
+
+		<div  style="text-align: center; padding-bottom: 20px;" style="">
+			<a href="/termination/room_contracts/new" class="f-button theme-border-color theme-color on-hover" style="margin-right: 28px;">もとに戻す</a>
+			<a href="/termination/room_contracts/new" class="f-button theme-border-color theme-color on-hover" style="margin-left: 28px;">確認画面へ</a>
+		</div>
+
+<!--
+		<div style="display: table; text-align: center; width: 100%; margin-top: 20px; margin-bottom: 20px;">
+			<div style="display: table-cell; text-align: right; padding-right: 10px;">
+				<a class="btn btn--default" style="padding-left: 10%; padding-right: 10%;" onclick="window.location.href = 'index2.html';">もとに戻す</a>
+			</div>
+			<div style="display: table-cell; text-align: left; padding-left: 10px;">
+				<a class="btn btn--default" style="padding-left: 10%; padding-right: 10%;" onclick="window.location.href = 'error2.html';">確認画面へ</a>
+			</div>
+		</div>
+-->
+	</section>
+</div>
+
+</body>
+</html>
