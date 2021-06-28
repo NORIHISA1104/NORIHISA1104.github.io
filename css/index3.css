@@ -275,3 +275,39 @@ a {
     -webkit-transition: .3s;
     transition: .3s;
 }
+
+input[type="tel"] {
+    --width: 100%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    --margin: 8px 0;
+    outline: none;
+    padding: 3px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+input[type="text"] {
+    --width: 100%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    --margin: 8px 0;
+    outline: none;
+    padding: 3px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+select {
+    --width: 100%;
+    border: 2px solid #aaa;
+    border-radius: 4px;
+    --margin: 8px 0;
+    outline: none;
+    padding: 3px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+.nowrap{
+	white-space: nowrap;
+}
