@@ -229,7 +229,7 @@ h1, h1.title, h2, h3, h4, h5, h6 {
     background-color: transparent;
 }
 .p-button {
-    --display: block;
+    display: block;
     width: 100%;
     max-width: 320px;
     margin: 0 auto;
@@ -246,7 +246,7 @@ h1, h1.title, h2, h3, h4, h5, h6 {
     transition: .3s;
 }
 .p-button-change {
-    padding: 0px 10px 0px 10px;
+    padding: 2px 10px 2px 10px;
 }
 
 a {
