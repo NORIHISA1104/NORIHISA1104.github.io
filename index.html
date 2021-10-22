@@ -8,7 +8,17 @@
 
 <link rel="stylesheet" type="text/css" href="./css/common.css" media="screen">
 <link rel="stylesheet" type="text/css" href="./css/index.css" media="screen">
-<script src="./js/index.js" charset="UTF-8"></script>
+<script src="./js/index.js" charset="UTF-8">
+
+window.addEventListener('message', function (e) {
+  switch (e.data.action) {
+    case 'SyncMessage':
+      messageInput.value = e.data.message;
+      break;
+  }
+});
+
+</script>
 <!--
 ▼ファビコン設置▼
 ※ファビコンを使用する際は
