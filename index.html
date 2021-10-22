@@ -11,6 +11,7 @@
 <script src="./js/index.js" charset="UTF-8"></script>
 <script charset="UTF-8">
 window.addEventListener('message', function (e) {
+	alert('OK');
   switch (e.data.action) {
     case 'SyncMessage':
       messageInput.value = e.data.message;
