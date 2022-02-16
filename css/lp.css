@@ -1,3 +1,6 @@
+@import url(https://fonts.googleapis.com/earlyaccess/notosansjapanese.css);
+@import url(https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500;700&display=swap);
+
 body {
 	font-family: Noto Sans Japanese,-apple-system,BlinkMacSystemFont,ヒラギノ角ゴ ProN W3,Meiryo,sans-serif;
 }
