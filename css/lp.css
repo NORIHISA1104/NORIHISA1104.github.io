@@ -3,4 +3,6 @@
 
 body {
 	font-family: Noto Sans Japanese,-apple-system,BlinkMacSystemFont,ヒラギノ角ゴ ProN W3,Meiryo,sans-serif;
+	margin: 0;
+	padding: 0;
 }
