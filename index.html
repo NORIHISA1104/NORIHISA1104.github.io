@@ -1,294 +1,40 @@
-<!DOCTYPE HTML>
-<html lang="ja">
+<html>
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
-
-<title>契約者様・居住者様情報変更申請</title>
-
-<link rel="stylesheet" type="text/css" href="./css/common.css" media="screen">
-<link rel="stylesheet" type="text/css" href="./css/index.css" media="screen">
-<script src="./js/index.js" charset="UTF-8"></script>
-<script charset="UTF-8">
-window.addEventListener('message', function (e) {
-	console.log(e.data);
-  switch (e.data.action) {
-    case 'SyncMessage':
-      messageInput.value = e.data.message;
-      break;
-  }
-});
-</script>
-
-<!--
-▼ファビコン設置▼
-※ファビコンを使用する際は
-コメントアウトを消してください。
--->
-
-<!--
-<link rel="shortcut icon" href="icon URL.ico"> 
--->
-
-<!--▲ファビコン設置▲-->
-
+	<link href="./css/lp.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body>
-
-
-<!-- ▼ヘッダー▼ -->
-<div class="top">
-	<div class="title">契約者様・居住者様情報変更申請</div>
-</div>
-<div class="screen">
-	<div class="screen_name">あ変更箇所のみご入力ください。</div>
-</div>
-<!-- ▲ヘッダー▲ -->
-
-
-
-<!-- 重要 -->
-<div class="important">
-	<div class="important_contents">
-		個人情報保護の観点より、お名前以外のお客様の情報の表示をしておりません。
-		情報更新日を参考に変更箇所のみ入力ください。
+	<div style="font-weight: 700; color: #C00000; text-align: center; margin: 20 0 20 0; font-size: 17pt;">
+		積水ハウスグループの不動産情報<br/>
 	</div>
-</div>
-<!-- 重要 -->
-
-<!-- メニュー -->
-<table class="mainTable">
-	<colgroup class="title1"></colgroup>
-	<colgroup class="title2"></colgroup>
-	<colgroup class="content"></colgroup>
-	<colgroup class="update"></colgroup>
-	<tr>
-		<td colspan=2></td>
-		<td class="titleHead">現契約</td>
-		<td class="titleHead">情報更新日</td>
-	</tr>
-	<tr>
-		<td colspan=2 class="contentsHead">借主氏名</td>
-		<td class="contentsBody">
-			<div class="keiyakusyaName">積水　太郎</div>
-			<div class="meigiText">契約名義の変更・ご結婚などによるお名前の変更については、営業所までご連絡ください。</div>
-		</td>
-		<td class="contentsFoot">2021年3月</td>
-	</tr>
-	<tr class="height40">
-		<td colspan=2 class="contentsHead">固定電話</td>
-		<td class="contentsBody">
-			<div id="readItem1" class="contentsBodyBox">
-				<div class="contentsBodyBoxLeft">※※※※※</div>
-				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" onclick="changeContents('1');"/>
-				</div>
+	<div style="border: 1px solid gray; padding: 10 20 10 20; margin: 20; font-size: 10pt;">
+		<div style="margin: auto;">
+			<div>
+				シャーメゾンライフPOINTが使えます！
 			</div>
-			<div id="editItem1" class="contentsBodyBox displayNone">
-				<div>
-					<input id="editItemField1" class="inputContents" type="text" inputmode="tel" placeholder="例）090-1234-5678" />
-				</div>
+			<div>
+				積水ハウスグループが、建築する物件、仲介、賃貸管理の部件は<br/>
+				ポイントが使えます。<br/>
+				※ご利用について
 			</div>
-		</td>
-		<td id="editDate1" class="contentsFoot">2021年3月</td>
-	</tr>
-	<tr class="height40">
-		<td colspan=2 class="contentsHead">携帯電話</td>
-		<td class="contentsBody">
-			<div id="readItem2" class="contentsBodyBox">
-				<div class="contentsBodyBoxLeft">※※※※※</div>
-				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" onclick="changeContents('2');"/>
-				</div>
-			</div>
-			<div id="editItem2" class="contentsBodyBox displayNone">
-				<div>
-					<input id="editItemField2" class="inputContents" type="text" inputmode="tel" placeholder="例）090-1234-5678" />
-				</div>
-			</div>
-		</td>
-		<td id="editDate2" class="contentsFoot">2021年3月</td>
-	</tr>
-	<tr class="height40">
-		<td rowspan=3 class="contentsHead">勤務先</td>
-		<td class="contentsHead">社名</td>
-		<td class="contentsBody">
-			<div id="readItem3" class="contentsBodyBox">
-				<div class="contentsBodyBoxLeft">※※※※※</div>
-				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" onclick="changeContents('3');"/>
-				</div>
-			</div>
-			<div id="editItem3" class="contentsBodyBox displayNone">
-				<div>
-					<input id="editItemField3" class="inputContents" type="text" placeholder="全角XX文字" />
-				</div>
-			</div>
-		</td>
-		<td id="editDate3" class="contentsFoot">2021年3月</td>
-	</tr>
-	<tr class="height40">
-		<td class="contentsHead">電話番号</td>
-		<td class="contentsBody">
-			<div id="readItem4" class="contentsBodyBox">
-				<div class="contentsBodyBoxLeft">※※※※※</div>
-				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" onclick="changeContents('4');"/>
-				</div>
-			</div>
-			<div id="editItem4" class="contentsBodyBox displayNone">
-				<div>
-					<input id="editItemField4" class="inputContents" type="text" inputmode="tel" placeholder="例）090-1234-5678" />
-				</div>
-			</div>
-		</td>
-		<td id="editDate4" class="contentsFoot">2021年3月</td>
-	</tr>
-	<tr class="height40">
-		<td class="contentsHead">所在地</td>
-		<td class="contentsBody">
-			<div id="readItem5" class="contentsBodyBox">
-				<div class="contentsBodyBoxLeft">※※※※※</div>
-				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" onclick="changeContents('5');"/>
-				</div>
-			</div>
-			<div id="editItem5" class="contentsBodyBox displayNone">
-				<div>
-					<div>
-						〒<input id="editItemField5" class="inputPostCode" type="text" placeholder="例）999-9999" style="width: 60%;" />
-					</div>
-					<div style="margin-top: 3px;">
-						<textarea  rows="4" cols="20"></textarea>
-					</div>
-<!--
-					<input class="inputContents" type="text" placeholder="全角XX文字" />
--->
-				</div>
-			</div>
-		</td>
-		<td id="editDate5" class="contentsFoot">2021年3月</td>
-	</tr>
-	<tr class="height40">
-		<td rowspan=2 class="contentsHead">緊急連絡先</td>
-		<td class="contentsHead">氏名</td>
-		<td class="contentsBody">
-			<div id="readItem6" class="contentsBodyBox">
-				<div class="contentsBodyBoxLeft">※※※※※</div>
-				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" onclick="changeContents('6');"/>
-				</div>
-			</div>
-			<div id="editItem6" class="contentsBodyBox displayNone">
-				<div>
-					<input id="editItemField6" class="inputContents" type="text" placeholder="全角XX文字" />
-				</div>
-			</div>
-		</td>
-		<td id="editDate6" class="contentsFoot">2021年3月</td>
-	</tr>
-	<tr class="height40">
-		<td class="contentsHead">電話番号</td>
-		<td class="contentsBody">
-			<div id="readItem7" class="contentsBodyBox">
-				<div class="contentsBodyBoxLeft">※※※※※</div>
-				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" onclick="changeContents('7');"/>
-				</div>
-			</div>
-			<div id="editItem7" class="contentsBodyBox displayNone">
-				<div>
-					<input id="editItemField7" class="inputContents" type="text" inputmode="tel" placeholder="例）090-1234-5678" />
-				</div>
-			</div>
-		</td>
-		<td id="editDate7" class="contentsFoot">2021年3月</td>
-	</tr>
-	<tr>
-		<td colspan=2 class="contentsHead">連帯保証人</td>
-		<td class="contentsBody">保証人・保証会社の変更は営業所までご連絡ください。</td>
-		<td class="contentsFoot">2021年3月</td>
-	</tr>
-</table>
-<table id="kyojusya" class="kyojusya">
-	<colgroup class="title1"></colgroup>
-	<colgroup class="title2"></colgroup>
-	<colgroup class="content"></colgroup>
-	<colgroup class="update"></colgroup>
-	<tr id="row1">
-		<td rowspan=4 class="contentsHead">居住者①</td>
-		<td class="contentsHead">お名前</td>
-		<td class="contentsBody">
-			<div class="contentsBodyBox">
-				<div class="contentsBodyBoxLeft">積水　花子</div>
-				<div class="contentsBodyBoxRight">
-					<input type="button" value="抹消" onclick="deleteRow();" />
-				</div>
-			</div>
-		</td>
-		<td class="contentsFoot">2021年3月</td>
-	</tr>
-	<tr id="row2">
-		<td class="contentsHead">生年月日</td>
-		<td class="contentsBody">
-			<div class="contentsBodyBox">
-				<div class="contentsBodyBoxLeft">※※※※※</div>
-				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" />
-				</div>
-			</div>
-		</td>
-		<td class="contentsFoot">2021年3月</td>
-	</tr>
-	<tr id="row3">
-		<td class="contentsHead">連絡先</td>
-		<td class="contentsBody">
-			<div class="contentsBodyBox">
-				<div class="contentsBodyBoxLeft">※※※※※</div>
-				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" />
-				</div>
-			</div>
-		</td>
-		<td class="contentsFoot">2021年3月</td>
-	</tr>
-	<tr id="row4">
-		<td class="contentsHead">勤務先</td>
-		<td class="contentsBody">
-			<div class="contentsBodyBox">
-				<div class="contentsBodyBoxLeft">※※※※※</div>
-				<div class="contentsBodyBoxRight">
-					<input type="button" value="変更" />
-				</div>
-			</div>
-		</td>
-		<td class="contentsFoot">2021年3月</td>
-	</tr>
-</table>
-
-<div style="text-align: center; margin-top: 20px;">
-	<input type="button" value="+居住者を追加する" onclick="addKyojusya();"/>
-</div>
-
-<div style="display: table; text-align: center; width: 100%; margin-top: 20px; margin-bottom: 20px;">
-	<div style="display: table-cell; text-align: right; padding-right: 10px;">
-		<input type="button" value="もとに戻す" onclick="window.location.href = 'index.html';"/>
+		</div>
 	</div>
-	<div style="display: table-cell; text-align: left; padding-left: 10px;">
-		<input type="button" value="確認画面へ" onclick="window.location.href = 'error.html';" />
+	<div>
+		<div style="background-color: #F2F2F2; padding: 0 0 0 10;">
+			<div style="border-left: 10px solid #CC1216; padding: 5; font-weight: 700;">
+				お部屋を探す
+			</div>
+		</div>
+		<div>
+		</div>
+		<div>
+			<div>
+				積水ハウスの賃貸住宅
+			</div>
+			<div>
+				積水ハウス不動産管理のシャーメゾンにお住み替えで最大３か月の家賃が無料！
+			</div>
+		</div>
 	</div>
-</div>
-
-
-
-<!-- ▼フッター▼ -->
-<footer>
-
-
-
-</footer>
-<!-- ▲フッター▲ -->
-
 
 </body>
 </html>
